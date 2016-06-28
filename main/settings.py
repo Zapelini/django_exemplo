@@ -79,9 +79,8 @@ WSGI_APPLICATION = 'main.wsgi.application'
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
 DATABASES = {
-    # 'default': dj_database_url.config(default=os.environ.get('DATABASE_URL', 'sqlite:///{0}'
-    #                                                          .format(os.path.join(BASE_DIR, 'db.sqlite3')))),
-    'default': dj_database_url.config(default=os.environ.get('DATABASE_URL', 'mysql://juca:7b5a67574d8b1d77d2803b24946950f0@dba.izapelini.com.br:3307/juca')),
+    'default': dj_database_url.config(default=os.environ.get('DATABASE_URL', 'sqlite:///{0}'
+                                                             .format(os.path.join(BASE_DIR, 'db.sqlite3')))),
 }
 
 
