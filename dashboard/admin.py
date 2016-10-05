@@ -5,7 +5,8 @@ from dashboard.models import Client, Vehicle
 
 
 class ClientAdmin(admin.ModelAdmin):
-    pass
+    list_filter = ('name',)
+    search_fields = ['name', 'email']
 
 
 class VehicleAdmin(admin.ModelAdmin):
