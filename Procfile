@@ -1,1 +1,1 @@
-web: gunicorn --bind 0.0.0.0:${PORT:-8000} main.wsgi
+web: newrelic-admin run-program gunicorn main.wsgi
