@@ -11,8 +11,8 @@ class Client(models.Model):
     email = models.EmailField('e-mail')
 
     class Meta:
-    verbose_name = 'Cliente'
-    verbose_name_plural = 'Clientes'
+        verbose_name = 'Cliente'
+        verbose_name_plural = 'Clientes'
 
     def __unicode__(self):
         return '%s - %s' % (self.name, self.email)
